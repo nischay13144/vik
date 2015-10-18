@@ -1,0 +1,20 @@
+I"(function() {
+  jQuery(function() {
+    var states;
+    states = $('#courier_state_id').html();
+    console.log(states);
+    return $('#courier_country_id').change(function() {
+      var country, options;
+      country = $('#courier_country_id :selected').text();
+      options = $(states).filter("optgroup[label=" + country + "]").html();
+      console.log(options);
+      if (options) {
+        return $('#courier_state_id').html(options);
+      } else {
+        return $('#courier_state_id').empty();
+      }
+    });
+  });
+
+}).call(this);
+:ET

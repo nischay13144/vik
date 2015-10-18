@@ -1,0 +1,22 @@
+I"å(function() {
+  jQuery(function() {
+    var states;
+    $('#courier_state_id').parent().hide();
+    states = $('#courier_state_id').html();
+    return $('#courier_country_id').change(function() {
+      var country, escaped_country, options;
+      country = $('#courier_country_id :selected').text();
+      escaped_country = country.replace(/([ #;&,.+*~\':"!^$[\]()=>|\/@])/g, '\\$1');
+      options = $(states).filter("optgroup[label='" + escaped_country + "']").html();
+      if (options) {
+        $('#courier_state_id').html(options);
+        return $('#courier_state_id').parent().show();
+      } else {
+        $('#courier_state_id').empty();
+        return $('#courier_state_id').parent().hide();
+      }
+    });
+  });
+
+}).call(this);
+:ET
