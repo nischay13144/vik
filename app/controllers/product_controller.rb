@@ -1,5 +1,7 @@
 class ProductController < ApplicationController
 	def index
+		
+    	@user = User.all
 	end
 	def about
 	end

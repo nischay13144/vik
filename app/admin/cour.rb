@@ -12,6 +12,6 @@ ActiveAdmin.register Cour do
 #   permitted << :other if resource.something?
 #   permitted
 # end
-
+permit_params  :c_name, :p_name, :abn, :mob, :email, :c_type, :country, :state, :city, :comp_name, :landline, :remarks, :pin, :trans_date, :trans_status, :sms_reply, :delivery_date, :web_confirm
 
 end

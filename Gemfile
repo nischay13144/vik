@@ -29,7 +29,8 @@ gem 'json', '~> 1.8.3'
 gem 'country_select'
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'private_pub'
+gem 'thin'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

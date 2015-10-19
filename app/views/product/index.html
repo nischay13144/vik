@@ -51,10 +51,31 @@
                     <li class="page-scroll">
                         <a href="/about">About</a>
                     </li>
-                    
+                  
                     <li class="page-scroll">
                         <a href="/contact">Contact</a>
                     </li>
+                    <!-- Sign In/Up -->  
+                    <% if user_signed_in? %>
+                    <li id="fat-menu" class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Account <b class="caret"></b>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><%= link_to "Profile", edit_user_registration_path %></li>
+                        <li><%= link_to "Settings", '#' %></li>
+                        <li class="divider"></li>
+                        <li>
+                          <%= link_to "Logout", destroy_user_session_path, :method => :delete %>
+                        </li>
+                      </ul>
+                        </li>
+                        <li> <%= link_to "Logout", destroy_user_session_path, :method => :delete %></li>
+                    <% else %>
+                        <li><%= link_to "Sign in", new_user_session_path %></li>
+                        <li><%= link_to "Sign up", new_user_registration_path %></li>
+                    <% end %>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -70,14 +91,36 @@
     <img src="/assets/img_header1.gif" alt="Smiley face" height="140px" width="950px">
     </div>
 
-
-<div class="row">
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="/assets/s1.jpg" alt="">
-                </a>
+   
+    
+        <div class="row">
+            
+            <div class="col-md-5" align ="center">
+                <h3 font-style="arial">Users</h3>
+                <h4></h4>
+                <p>
+                    Chat with Existing Users 
+                </p>
+            
+        <!-- /.row -->
+    <% if current_user.present? %>
+        <% @user.each_with_index do |user, index| %>
+            <tr>
+              <td><%= index +=1 %></td>
+              <td><%= user.email %></td>
+              <td>
+                <%= link_to "Send Message", "#", class: "btn btn-success btn-xs start-conversation",
+                            "data-sid" => current_user.id, "data-rip" => user.id %>
+              </td><br>
+            </tr>
+            <% end %>
+                <hr>
             </div>
-            <div class="col-md-5">
+        </div>
+    <% end %>
+        <div class="row">
+            
+            <div class="col-md-5" align ="center">
                 <h3 font-style="arial">Courier</h3>
                 <h4></h4>
                 <p>

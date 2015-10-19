@@ -106,20 +106,26 @@
 
                 <br>
                 <p>
-                <%= f.label :country, "Select Country" %> <select id="country" name ="country"></select>
-                <%= f.label :state, "Select State" %> <select id="state" name ="state"></select> 
-                 <!--   
-                <p>
                     <%= f.label :country, "Select Country" %> 
-                    <%= f.country_select :country, :prompt => 'Select One', :id => 'country', :name => 'country' %> 
+                    <%= f.country_select :country, :prompt => 'Select Country', :id => 'country', :name => 'country' %>
+                    <%= f.label :state, "Select State" %> 
+                    <%= f.country_select :state, :prompt => 'Select State', :id => 'state', :name => 'state' %>
+                <p>
+                </p> 
+                <!-- 
+                <%= f.label :country, "Select Country" %> <select id="country" name ="country" ></select>     
+                <%= f.label :state, "Select State" %> <select id="state" name ="state"></select> 
+                   
+                <p>
+                    
                 </p>
-                -->
+                
                 <script language="javascript">
                 populateCountries("country", "state");
                 </script>
-
-                
-
+                -->
+                <br>
+                <p>
                 
                   <%= f.label :city %>
                   <%= f.collection_select :city, Cour::CITY, :to_s, :to_s, :include_blank => true %>
