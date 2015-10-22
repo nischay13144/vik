@@ -1,0 +1,5 @@
+I"H(function() {
+  PrivatePub.subscribe("/chatroom");
+
+}).call(this);
+:ET

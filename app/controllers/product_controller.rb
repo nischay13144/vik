@@ -13,5 +13,4 @@ class ProductController < ApplicationController
 	end
 	def s3
 	end
-	
 end
