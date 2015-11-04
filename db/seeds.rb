@@ -15,5 +15,3 @@ CSV.foreach(Rails.root.join("states.csv"), headers: true) do |row|
     state.country_id = row[2]
   end
 end
-
-AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')

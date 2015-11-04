@@ -105,6 +105,7 @@
                 </p>
 
                 <br>
+                <!-- 
                 <p>
                     <%= f.label :country, "Select Country" %> 
                     <%= f.country_select :country, :prompt => 'Select Country', :id => 'country', :name => 'country' %>
@@ -112,7 +113,7 @@
                     <%= f.country_select :state, :prompt => 'Select State', :id => 'state', :name => 'state' %>
                 <p>
                 </p> 
-                <!-- 
+                
                 <%= f.label :country, "Select Country" %> <select id="country" name ="country" ></select>     
                 <%= f.label :state, "Select State" %> <select id="state" name ="state"></select> 
                    
@@ -124,7 +125,21 @@
                 populateCountries("country", "state");
                 </script>
                 -->
+
+                 <p>
+                
+                <%= f.label :country %>
+                <%= f.collection_select :country, Country.order(:name), :name, :name, include_blank: true, prompt: 'Please select a country' %>
+                </p>
+                
                 <br>
+
+                <p>
+                <%= f.label :state, "State or Province" %>
+                <%= f.grouped_collection_select :state, Country.order(:name), :states, :name, :name, :name, include_blank: true %>
+                </p>
+
+
                 <p>
                 
                   <%= f.label :city %>
