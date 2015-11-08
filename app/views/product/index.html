@@ -1,320 +1,889 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- saved from url=(0103)http://angularconnect.com/?utm_source=angularjs-org&utm_medium=angularjs-org&utm_campaign=angularjs-org -->
+<html lang="en" itemscope="" itemtype="http://schema.org/Place" class="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-site-verification" content="QkXKROgy7DNSxbVDTl7Gz2Sjv59I8uXXWo70HiCUny8">
+        <meta name="description" content="AngularConnect is a two day, two track conference featuring talks from the world’s best Angular experts.">
+        <meta name="keywords" content="javascript, angularjs, jquery, html, json, angular, ui, node.js, css, web development, client side mvc">
+        <meta name="author" content="White October Events">
 
-<head>
+        <link href="css/site.css" rel="stylesheet" media="screen">
+        <link href="css/css" rel="stylesheet" type="text/css">
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
+        
+        <link rel="shortcut icon" href="http://angularconnect.com/img/favicon.ico?v=7">
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://angularconnect.com/img/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://angularconnect.com/img/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://angularconnect.com/img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://angularconnect.com/img/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="http://angularconnect.com/img/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://angularconnect.com/img/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://angularconnect.com/img/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://angularconnect.com/img/apple-touch-icon-152x152.png">
+        <link rel="icon" type="image/png" href="http://angularconnect.com/img/favicon-196x196.png" sizes="196x196">
+        <link rel="icon" type="image/png" href="http://angularconnect.com/img/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="http://angularconnect.com/img/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="http://angularconnect.com/img/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="http://angularconnect.com/img/favicon-128.png" sizes="128x128">
+        <meta name="application-name" content=" ">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-TileImage" content="/img/mstile-144x144.png">
+        <meta name="msapplication-square70x70logo" content="/img/mstile-70x70.png">
+        <meta name="msapplication-square150x150logo" content="/img/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo" content="/img/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo" content="/img/mstile-310x310.png">
+        
+        <!-- Schema.org markup for Google+ -->
+        <meta itemprop="name" content="AngularConnect – The Official European Angular Conference 2015">
+        <meta itemprop="description" content="AngularConnect is a two day, two track conference featuring talks from the world’s best Angular experts.">
+        <meta itemprop="image" content="http://angularconnect.com/img/social-280x150.png"> 
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <!-- Open Graph data -->
+        <meta property="og:title" content="AngularConnect – The Official European Angular Conference 2015">
+        <meta property="og:type" content="place">
+        <meta property="og:url" content="http://angularconnect.com">
+        <meta property="og:image" content="http://angularconnect.com/img/social-200x200.png">
+        <meta property="og:description" content="AngularConnect is a two day, two track conference featuring talks from the world’s best Angular experts.">
+        <meta property="og:site_name" content="AngularConnect – The 2015 European Angular Conference">
+        <meta property="fb:admins" content="798257340251248">
+        
+        <!-- Social sharing meta -->
+        <meta name="twitter:title" content="AngularConnect – The Official European Angular Conference 2015">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@AngularConnect">
+        <meta name="twitter:creator" content="@AngularConnect">
+        <meta name="twitter:description" content="AngularConnect is a two day, two track conference featuring talks from the world’s best Angular experts.">
+        <meta name="twitter:image:src" content="http://angularconnect.com/img/social-280x150.png">
 
-    <title>Vikmans</title>
+        <!-- Adds js class when enabled -->
+        <script async="" src="js/analytics.js"></script><script type="text/javascript">
+            document.getElementsByTagName('html')[0].setAttribute('class', 'js');
+        </script><style type="text/css"></style>
+        <!-- Fonts -->
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script type="text/javascript" src="js/respond.min.js"></script>
 
-    <!-- Custom CSS -->
-    <link href="css/1-col-portfolio.css" rel="stylesheet">
+        <!-- Analytics -->
+                
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+          var googleDomainList = ['angularconnect.com', 'ti.to'];
+          
+          ga('create', 'UA-61211705-1', 'auto', {'allowLinker': true});
+          ga('require', 'linker');
+          ga('linker:autoLink', googleDomainList);
+          ga('send', 'pageview');
+        </script>
+        <title>Vikmans</title>
+    </head>
+    <body>
 
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" >
+        <header class="site__header navbar-fixed-top">
+    <div class="nav__contain">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
+            <a href="http://angularconnect.com/" class="site__logo pull-left text-hide">AngularConnect</a>
+            <div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#top">Vikmans</a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" id="top">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="/about">About</a>
-                    </li>
-                  
-                    <li class="page-scroll">
-                        <a href="/contact">Contact</a>
-                    </li>
-                    <!-- Sign In/Up -->  
-                    <% if user_signed_in? %>
-                    <li id="fat-menu" class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        Account <b class="caret"></b>
-                      </a>
-                    <li><sup><span class="label label-danger pull-right"><%=unread_messages_count%></span></sup><%= link_to "Inbox", mailbox_inbox_path %></li>
-                      <ul class="dropdown-menu">
-                        <li><%= link_to "Profile", edit_user_registration_path %></li>
-                        <li><%= link_to "Settings", '#' %></li>
-                        <li class="divider"></li>
-
+            <div>
+                <div class="collapse navbar-collapse">
+                    <!--?php perch_content('Buy tickets button'); ?-->
+                    <ul class="list-inline nav--primary u-uppercase">
+                        <li >
+                            <a class="nav--primary__link"  href="/sessions">Sessions</a>   
+                        </li>
+                        <li >
+                            <a class="nav--primary__link"  href="/speakers">Speakers</a>   
+                        </li>
+                        <li >
+                            <a class="nav--primary__link"  href="/schedule">Schedule</a>   
+                        </li>
+                        <li >
+                            <a class="nav--primary__link"  href="/workshops">Workshops</a>   
+                        </li>
                         
+                        <% if user_signed_in? %>
+                        <li >
+                            <sup><span class="label label-danger pull-right"><%=unread_messages_count%></span></sup><%= link_to "Inbox", mailbox_inbox_path, :class => "nav--primary__link" %>
+                        </li>
                         <li>
-                          <%= link_to "Logout", destroy_user_session_path, :method => :delete %>
+                          <%= link_to "Logout", destroy_user_session_path, :method => :delete, :class => "nav--primary__link" %>
                         </li>
-                      </ul>
-                        </li>
-                        <li> <%= link_to "Logout", destroy_user_session_path, :method => :delete %></li>
-                    <% else %>
-                        <li><%= link_to "Sign in", new_user_session_path %></li>
-                        <li><%= link_to "Sign up", new_user_registration_path %></li>
-                    <% end %>
-
-                </ul>
+                        <% else %>
+                        <li><%= link_to "Sign in", new_user_session_path, :class => "nav--primary__link" %></li>
+                        <li><%= link_to "Sign up", new_user_registration_path, :class => "nav--primary__link" %></li>
+                        <% end %>
+                    </ul>
+                </div>
             </div>
-            <!-- /.navbar-collapse -->
+           
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-    <br>
-    <br>
-    <br>
-    
-
-    <div id="header-section" align ="center">
-    <img src="/assets/3.jpg" alt="Smiley face" height="140px" width="180px">
-    <img src="/assets/img_header1.gif" alt="Smiley face" height="140px" width="950px">
     </div>
+</header>
 
+      <!--  <section class="hero">
+          <img src="/assets/angularconnect-logo-white.png" alt="Angular Connect" width="380" height="279">
+        </section>
 
-
-        <!-- [...] -->
-    <!--
-      <ul class="nav navbar-nav pull-right">
-        <% if user_signed_in? %>
-            <li><%= link_to "Inbox", mailbox_inbox_path %></li>
-            <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
-        <% else %>
-            <li class="active"><%= link_to "Login", new_user_session_path %></li>
-            <li><%= link_to "Sign up", new_user_registration_path %></li>
-        <% end %>
-      </ul>
-    -->
-<!-- [...] -->
-   
-    
-        <div class="row">
-            
-            <div class="col-md-5" align ="center">
-                <h3 font-style="arial">Users</h3>
-                <h4></h4>
-                <p>
-                    Chat with Existing Users 
-                </p>
-                <% if current_user.present? %>
-        <% @user.each_with_index do |user, index| %>
-            <tr>
-              <td><%= index +=1 %></td>
-              <td><%= user.email %></td>
-              <td>
-                <%= link_to "Send Message", "#", class: "btn btn-success btn-xs start-conversation",
-                            "data-sid" => current_user.id, "data-rip" => user.id %>
-              </td><br>
-            </tr>
-            <% end %>
-                <hr>
+        <div class="section section-about">
+            <div class="container">
+                <ul class="list-stylised list-jumbo u-uppercase">
+    <li>
+        <span class="icon-color icon-location"></span>
+        ExCel, London
+    </li>
+    <li>
+        <span class="icon-color icon-calendar"></span>
+        20 &amp; 21 October 2015
+    </li>
+</ul>
+                <div class="block--half-spaced">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <h1 class="hero__heading u-center">The Official European Angular Conference 2015</h1>
+                            <div class="block--half-spaced">
+                            <div class="lead u-center"><p>AngularConnect is a two-day, multi-track conference featuring talks from the world’s leading Angular experts, including the core Angular team from Google.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-  <% end %>
-    
-    
-    
+-->
+<link rel="stylesheet" href="css/owl.carousel.css">
+ 
+ <!-- Default Theme -->
+<link rel="stylesheet" href="css/owl.theme.css">
+ 
+<!-- Include js plugin -->
+<script src="js/owl.carousel.js"></script>
+<script type="text/javascript">
 
-        <!-- /.row -->
-    
+$(document).ready(function() {
+ 
+  var time = 4; // time in seconds
+ 
+  var $progressBar,
+      $bar, 
+      $elem, 
+      isPause, 
+      tick,
+      percentTime;
+ 
+    //Init the carousel
+    $("#owl-demo").owlCarousel({
+      slideSpeed : 500,
+      paginationSpeed : 500,
+      singleItem : true,
+      afterInit : progressBar,
+      afterMove : moved,
+      startDragging : pauseOnDragging
+    });
+ 
+    //Init progressBar where elem is $("#owl-demo")
+    function progressBar(elem){
+      $elem = elem;
+      //build progress bar elements
+      buildProgressBar();
+      //start counting
+      start();
+    }
+ 
+    //create div#progressBar and div#bar then prepend to $("#owl-demo")
+    function buildProgressBar(){
+      $progressBar = $("<div>",{
+        id:"progressBar"
+      });
+      $bar = $("<div>",{
+        id:"bar"
+      });
+      $progressBar.append($bar).prependTo($elem);
+    }
+ 
+    function start() {
+      //reset timer
+      percentTime = 0;
+      isPause = false;
+      //run interval every 0.01 second
+      tick = setInterval(interval, 10);
+    };
+ 
+    function interval() {
+      if(isPause === false){
+        percentTime += 1 / time;
+        $bar.css({
+           width: percentTime+"%"
+         });
+        //if percentTime is equal or greater than 100
+        if(percentTime >= 100){
+          //slide to next item 
+          $elem.trigger('owl.next')
+        }
+      }
+    }
+ 
+    //pause while dragging 
+    function pauseOnDragging(){
+      isPause = true;
+    }
+ 
+    //moved callback
+    function moved(){
+      //clear interval
+      clearTimeout(tick);
+      //start again
+      start();
+    }
+ 
+    //uncomment this to make pause on mouseover 
+    // $elem.on('mouseover',function(){
+    //   isPause = true;
+    // })
+    // $elem.on('mouseout',function(){
+    //   isPause = false;
+    // })
+ 
+});
+</script>
+
+<div id="demo">
+        <div class="container">
+          <div class="row">
+            <div class="span12">
+              <div id="owl-demo" class="owl-carousel">
+
+                <div class="item"><img src="assets/fullimage1.jpg" alt="The Last of us"></div>
+                <div class="item"><img src="assets/fullimage2.jpg" alt="GTA V"></div>
+                <div class="item"><img src="assets/fullimage3.jpg" alt="Mirror Edge"></div>
+
+              </div>
             </div>
+          </div>
         </div>
-        <div class="row">
-            
-            <div class="col-md-5" align ="center">
-                <h3 font-style="arial">Courier</h3>
-                <h4></h4>
-                <p>
-                    Add new courier details here 
-                </p>
-                <a class="btn btn-primary" href="/cour">Add Courier <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
+    </div>      
 
-        <hr>
-
-    <!-- Page Content -->
+<div class="section section-papers">
     <div class="container">
-
-        <!-- Page Heading -->
-        <div class="row">
-            <div class="col-lg-12" align ="center">
-                <h1 class="page-header">Scanners
-                    
-                </h1>
-            </div>
+        <div class="col-md-6 col-md-offset-3">
+          <h1 class="section__heading u-center" style="text-transform: inherit;">The videos are online!</h1>
+          <div class="lead u-center">The videos for all sessions are available to watch on YouTube. Catch up on any you missed, or re-watch your favourites.</div>
+          <div class="block--half-spaced">
+                        <div class="col-md-6 col-md-offset-3">
+            <p class="u-center"><a class="btn btn-papers" href="https://www.youtube.com/channel/UCzrskTiT_ObAk3xBkVxMz5g">Watch the Videos</a></p>
+                        </div>
+                        
+          </div>
         </div>
-        <!-- /.row -->
-
-        <!-- Product One -->
-        <div class="row">
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="/assets/s2.png" alt="">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h3>Scanners : Document Scanners</h3>
-                <h4></h4>
-                <p>Document scanners are designed to convert large amounts of single-sided and double-sided paper documents into images. Originals can be in color and black and white, and vary in size from a bank check up to 11x17 or larger. Based on the number of sides scanned in a single pass may be referred to as Simplex or Duplex.
-<br><br><hr>
-Depending on the volume of paper a document scanner can handle it can be classified as low, medium high or production scanner. With the large number of document scanners available in the market, selecting an ideal scanner can be confusing.
-<br><br>
-These scanner can be broadly classified into further categories.</p>
-                <a class="btn btn-primary" href="/request">Enquire <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Product Two -->
-        <div class="row">
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="/assets/s1.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h3 font-style="arial">Scanners : A0 Wide Format</h3>
-                <h4></h4>
-                <p>
-                    Use of wide format scanning is becoming more and more important as technology moves towards digital storage and digital printing.We have a large range of these scanners and in different sizes. Click on the model to see full details.
-                    
-                    From its inception as a quick and accurate way to copy blueprints and architectural drawings, it’s evolved into a tool for an ever broadening range of technical and creative applications. 
-                    <br><br><hr>The technical side includes blueprints, mechanical drawings and other technical documents and creative side includes photographs, posters, paintings, drawings, and fine art applications. Wide format scanning is also useful for working with historically delicate parchments and materials, such as old newspapers.<br><br>
-                    We have a large range of these scanners and in different sizes.
-                </p>
-                <a class="btn btn-primary" href="/request">Enquire <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Product Three -->
-        <div class="row">
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="/assets/s3.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h3> Scanners : Microfilm Cameras</h3>
-                <h4></h4>
-                <p>Conservation through microfilming is the technically simple and economical way to ensure long term archival of important documents in a small space. Currently, other digital storage medium (CD, DVD, HDD, Tape) cannot attain the Microfilm's rapprochement shelf life. Therefore, the microfilming is securing long term archival of library material, despite the rapid development of digital storage media will also be indispensable in future.
-                    <br><br><hr>
-
- We offer scanners for scanning of all kinds of your documents (books, registers, drawings, office documents, maps or land records) and exposing them on the Microfilms in a secured way, at competitive pricing without compromising on high quality required in Microfilm creation.
-<br><br></p>
-                <a class="btn btn-primary" href="/request">Enquire <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Pagination -->
-        <div class="row text-center">
-            <div class="col-lg-12">
-                <ul class="pagination">
-                    <li>
-                        <a href="#">&laquo;</a>
-                    </li>
-                    <li class="active">
-                        <a href="#">1</a>
-                    </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    
-                    <li>
-                        <a href="#">&raquo;</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
+    </div>
+</div>
 
         
+        <div class="section section-speakers">
+            <div class="container">
+                <div class="u-center">
+                  <h1 class="section__heading">Some of our speakers</h1>
+                  <p class="u-center"><a class="btn btn-speakers btn-spaced" href="http://angularconnect.com/speakers">View all speakers</a></p>
+                  <div class="col-sm-3">
+    
+    
+    <a class="speaker__link" href="http://twitter.com/IgorMinar">
+    
+        <figure class="block--speaker">
+            <div class="speaker__img">
+                <img src="/assets/igor-1.png" alt="Igor Minar">
+            </div>
+            <figcaption class="block__label">
+                <h3 class="label__heading">Igor Minar</h3>
+                <div class="dropdown">
+
+                    <!-- trigger button -->
+                    <button>Navigate</button>
+
+                    <!-- dropdown menu -->
+                    <ul class="dropdown-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </figcaption>
+        </figure>  
+      </a>
+</div>
 
 
-        <!-- Footer -->
-        <footer align="center">
+<div class="col-sm-3">
+    
+    
+    <a class="speaker__link" href="http://twitter.com/naomitraveller">
+    
+        <figure class="block--speaker">
+            <div class="speaker__img">
+                <img src="/assets/naomi-1.png" alt="Naomi Black">
+            </div>
+            <figcaption class="block__label">
+                <h3 class="label__heading">Naomi Black</h3>
+                <div class="dropdown">
+
+                    <!-- trigger button -->
+                    <button>Navigate</button>
+
+                    <!-- dropdown menu -->
+                    <ul class="dropdown-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </figcaption>
+        </figure>  
+      </a>
+</div>
+
+
+<div class="col-sm-3">
+    
+    
+    <a class="speaker__link" href="http://twitter.com/mhevery">
+    
+        <figure class="block--speaker">
+            <div class="speaker__img">
+                <img src="/assets/brian-1.png" alt="Brian Ford">
+            </div>
+            <figcaption class="block__label">
+                <h3 class="label__heading">Brian Ford</h3>
+                <div class="dropdown">
+
+                    <!-- trigger button -->
+                    <button>Navigate</button>
+
+                    <!-- dropdown menu -->
+                    <ul class="dropdown-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+              
+            </figcaption>
+        </figure>  
+      </a>
+</div>
+
+
+<div class="col-sm-3">
+    
+    
+    <a class="speaker__link" href="http://twitter.com/BradlyGreen">
+    
+        <figure class="block--speaker">
+            <div class="speaker__img">
+                <img src="/assets/brad.png" alt="Brad K Green">
+            </div>
+            <figcaption class="block__label">
+                <h3 class="label__heading">Brad K Green</h3>
+                <div class="dropdown">
+
+                    <!-- trigger button -->
+                    <button>Navigate</button>
+
+                    <!-- dropdown menu -->
+                    <ul class="dropdown-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </figcaption>
+        </figure>  
+      </a>
+</div>
+
+
+    <div class="clear"></div>
+
+<div class="col-sm-3">
+    
+    
+    <a class="speaker__link" href="http://twitter.com/karaforthewin">
+    
+        <figure class="block--speaker">
+            <div class="speaker__img">
+                <img src="/assets/kara.png" alt="Kara Erickson">
+            </div>
+            <figcaption class="block__label">
+                <h3 class="label__heading">Kara Erickson</h3>
+                <div class="dropdown">
+
+                    <!-- trigger button -->
+                    <button>Navigate</button>
+
+                    <!-- dropdown menu -->
+                    <ul class="dropdown-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </figcaption>
+        </figure>  
+      </a>
+</div>
+
+
+<div class="col-sm-3">
+    
+    
+    <a class="speaker__link" href="http://twitter.com/jeffbcross">
+    
+        <figure class="block--speaker">
+            <div class="speaker__img">
+                <img src="/assets/jeff.png" alt="Jeff Cross">
+            </div>
+            <figcaption class="block__label">
+                <h3 class="label__heading">Jeff Cross</h3>
+                <div class="dropdown">
+
+                    <!-- trigger button -->
+                    <button>Navigate</button>
+
+                    <!-- dropdown menu -->
+                    <ul class="dropdown-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </figcaption>
+        </figure>  
+      </a>
+</div>
+
+
+<div class="col-sm-3">
+    
+    
+    <a class="speaker__link" href="http://twitter.com/somejulie">
+    
+        <figure class="block--speaker">
+            <div class="speaker__img">
+                <img src="/assets/julie.png" alt="Julie Ralph">
+            </div>
+            <figcaption class="block__label">
+                <h3 class="label__heading">Julie Ralph</h3>
+                <div class="dropdown">
+
+                    <!-- trigger button -->
+                    <button>Navigate</button>
+
+                    <!-- dropdown menu -->
+                    <ul class="dropdown-menu">
+                        <li><%= link_to "Email", mailbox_inbox_path %></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </figcaption>
+        </figure>  
+      </a>
+</div>
+
+
+<div class="col-sm-3">
+    
+    
+    <a class="speaker__link" href="http://twitter.com/ThomasBurleson">
+    
+        <figure class="block--speaker">
+            <div class="speaker__img">
+                <img src="/assets/thomas.png" alt="Thomas Burleson">
+            </div>
+            <figcaption class="block__label">
+                <h3 class="label__heading">Thomas Burleson</h3>
+                <div class="dropdown">
+
+                    <!-- trigger button -->
+                    <button>Navigate</button>
+
+                    <!-- dropdown menu -->
+                    <ul class="dropdown-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </figcaption>
+        </figure>  
+      </a>
+</div>
+
+
+    <div class="clear"></div>
+
+                  <div class="block--half-spaced">
+                    <p class="u-center"><a class="btn btn-speakers" href="http://angularconnect.com/speakers">View all speakers</a></p>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section-organisers">
+            <div class="container">
+                <h2 class="section__heading">Organisers</h2>
+                    <div class="container">
+                      <div class="block--half-spaced">
+                        <div class="row">
+                          <div class="col-md-4 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+                                                    <div class="block--organiser row ">
+          <div class="col-md-4 col-sm-4 col-xs-4">
+              
+              <a href="http://twitter.com/moonty"><img class="organiser__img" src="/assets/josh-moont-1.png" alt="Josh Moont"></a>
+          </div>
+          <div class="col-md-8 col-sm-8 col-xs-8">    
+              <div class="organiser__name"><a href="http://twitter.com/moonty">Josh Moont</a></div>
+              <div class="organiser__role">IT Director at WeSwap and co-organiser of the London AngularJS meetups</div>
+          </div>
+    </div>
+<div class="block--organiser row ">
+          <div class="col-md-4 col-sm-4 col-xs-4">
+              
+              <a href="https://twitter.com/petebd"><img class="organiser__img" src="/assets/pete-bacon-darwin-2.png" alt="Pete Bacon Darwin"></a>
+          </div>
+          <div class="col-md-8 col-sm-8 col-xs-8">    
+              <div class="organiser__name"><a href="https://twitter.com/petebd">Pete Bacon Darwin</a></div>
+              <div class="organiser__role">Member of the AngularJS team at Google and founder member of the AngularUI project</div>
+          </div>
+    </div>
+<div class="block--organiser row ">
+          <div class="col-md-4 col-sm-4 col-xs-4">
+              
+              <a href="http://www.whiteoctoberevents.co.uk/"><img class="organiser__img" src="/assets/vicky-carmichael.png" alt="Vicky Carmichael"></a>
+          </div>
+          <div class="col-md-8 col-sm-8 col-xs-8">    
+              <div class="organiser__name"><a href="http://www.whiteoctoberevents.co.uk/">Vicky Carmichael</a></div>
+              <div class="organiser__role">Marketing Manager at White October Events</div>
+          </div>
+    </div>
+                          </div>
+                          <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+                            <div class="block--organiser row ">
+          <div class="col-md-4 col-sm-4 col-xs-4">
+              
+              <a href="http://twitter.com/ConollyEd"><img class="organiser__img" src="/assets/ed-conolly-1.png" alt="Ed Conolly"></a>
+          </div>
+          <div class="col-md-8 col-sm-8 col-xs-8">    
+              <div class="organiser__name"><a href="http://twitter.com/ConollyEd">Ed Conolly</a></div>
+              <div class="organiser__role">Head of Development at OVO Energy and co-organiser of the London AngularJS meetups</div>
+          </div>
+    </div>
+<div class="block--organiser row ">
+          <div class="col-md-4 col-sm-4 col-xs-4">
+              
+              <a href="http://www.whiteoctoberevents.co.uk/"><img class="organiser__img" src="/assets/ruth-yarnit.png" alt="Ruth Yarnit"></a>
+          </div>
+          <div class="col-md-8 col-sm-8 col-xs-8">    
+              <div class="organiser__name"><a href="http://www.whiteoctoberevents.co.uk/">Ruth Yarnit</a></div>
+              <div class="organiser__role">Managing Director at White October Events</div>
+          </div>
+    </div>
+<div class="block--organiser row ">
+          <div class="col-md-4 col-sm-4 col-xs-4">
+              
+              <a href="http://www.whiteoctoberevents.co.uk/"><img class="organiser__img" src="/assets/june-alle.png" alt="June Alle"></a>
+          </div>
+          <div class="col-md-8 col-sm-8 col-xs-8">    
+              <div class="organiser__name"><a href="http://www.whiteoctoberevents.co.uk/">June Alle</a></div>
+              <div class="organiser__role">Sales Director - Sponsorship at White October Events</div>
+          </div>
+    </div>
+                          </div>
+                        </div> <!-- /.row -->
+                      </div>
+                    </div> <!-- /.container -->
+            </div> <!-- /.container -->
+        </div> <!-- /.section -->
+
+
+
+        <section class="section section-sponsors">
+    <div class="container">
+        <h2 class="section__heading">Sponsors</h2>
+        <div class="u-center"><p>Many thanks to our <a href="http://angularconnect.com/sponsors">wonderful sponsors</a>. If you’d like to get involved in supporting AngularConnect, please <a href="mailto:ruth@angularconnect.com">request a sponsor pack</a>.</p></div>
+        <div class="block--half-spaced">
+            <div class="row">
+                    <div class="col-md-3 col-sm-6">
+        <div class="block--sponsor">
+            <a class="sponsor__link" href="http://rangle.io/">
+                <img class="sponsor__img" src="/assets/rangle-2.png" alt="Rangle">
+                <div class="block__label block__label--bordered">
+                    Premier sponsor
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="block--sponsor">
+            <a class="sponsor__link" href="http://angular.io/">
+                <img class="sponsor__img" src="/assets/angular.png" alt="Angular">
+                <div class="block__label block__label--bordered">
+                    Platinum sponsor
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="block--sponsor">
+            <a class="sponsor__link" href="http://hired.com/?utm_source=events&utm_campaign=london&utm_medium=AngularConnect15">
+                <img class="sponsor__img" src="/assets/hired-middle.png" alt="Hired">
+                <div class="block__label block__label--bordered">
+                    Platinum sponsor
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="block--sponsor">
+            <a class="sponsor__link" href="http://www.mandsdigital.com/">
+                <img class="sponsor__img" src="/assets/ms.png" alt="M&amp;S Digital">
+                <div class="block__label block__label--bordered">
+                    Platinum sponsor
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="block--sponsor">
+            <a class="sponsor__link" href="http://www.workforsky.com/find-job/technology-and-product-development">
+                <img class="sponsor__img" src="/assets/sky.png" alt="Sky">
+                <div class="block__label block__label--bordered">
+                    Games room sponsor
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="block--sponsor">
+            <a class="sponsor__link" href="http://computerfutures.com/">
+                <img class="sponsor__img" src="/assets/computerfutures-middle.png" alt="Computer Futures">
+                <div class="block__label block__label--bordered">
+                    Gold Sponsor
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="block--sponsor">
+            <a class="sponsor__link" href="http://midlandhr.com/">
+                <img class="sponsor__img" src="/assets/midland-hr.png" alt="Midland HR">
+                <div class="block__label block__label--bordered">
+                    Gold sponsor
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="block--sponsor">
+            <a class="sponsor__link" href="http://dev.office.com/getting-started/office365apis">
+                <img class="sponsor__img" src="/assets/office-365.png" alt="Microsoft">
+                <div class="block__label block__label--bordered">
+                    Gold sponsor
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="block--sponsor">
+            <a class="sponsor__link" href="http://www.small-improvements.com/careers">
+                <img class="sponsor__img" src="/assets/small-improvements.png" alt="Small Improvements">
+                <div class="block__label block__label--bordered">
+                    Gold sponsor
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="block--sponsor">
+            <a class="sponsor__link" href="http://weswap.com/">
+                <img class="sponsor__img" src="/assets/weswap-middle.png" alt="WeSwap">
+                <div class="block__label block__label--bordered">
+                    Gold sponsor
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="block--sponsor">
+            <a class="sponsor__link" href="http://mandrill.com/">
+                <img class="sponsor__img" src="/assets/mandrill.png" alt="Mandrill">
+                <div class="block__label block__label--bordered">
+                    Lunch sponsor
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="block--sponsor">
+            <a class="sponsor__link" href="http://www.esynergy-solutions.co.uk/">
+                <img class="sponsor__img" src="/assets/esynergy-solutions.png" alt="eSynergy Solutions">
+                <div class="block__label block__label--bordered">
+                    Silver sponsor
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="block--sponsor">
+            <a class="sponsor__link" href="http://www.jetbrains.com/">
+                <img class="sponsor__img" src="/assets/jetbrains.png" alt="JetBrains">
+                <div class="block__label block__label--bordered">
+                    Silver sponsor
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="block--sponsor">
+            <a class="sponsor__link" href="http://gft.com/">
+                <img class="sponsor__img" src="/assets/gft.png" alt="GFT">
+                <div class="block__label block__label--bordered">
+                    Silver sponsor
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="block--sponsor">
+            <a class="sponsor__link" href="http://tech.zalando.com/">
+                <img class="sponsor__img" src="/assets/zalando.png" alt="Zalando">
+                <div class="block__label block__label--bordered">
+                    Silver sponsor
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="block--sponsor">
+            <a class="sponsor__link" href="http://angularbootcamp.com/">
+                <img class="sponsor__img" src="/assets/angular-bootcamp.png" alt="Angular Boot Camp">
+                <div class="block__label block__label--bordered">
+                    Bronze sponsor
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="block--sponsor">
+            <a class="sponsor__link" href="http://thoughtram.io/">
+                <img class="sponsor__img" src="/assets/thoughtram.png" alt="Thoughtram">
+                <div class="block__label block__label--bordered">
+                    Bronze sponsor
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="block--sponsor">
+            <a class="sponsor__link" href="http://unofficialcardboard.com/">
+                <img class="sponsor__img" src="/assets/google-cardboard.png" alt="Google Cardboard">
+                <div class="block__label block__label--bordered">
+                    Gift sponsor
+                </div>
+            </a>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+      
+    <section class="section section-newsletter">
+    <div class="container">
+        <h3 class="section__heading">Want occasional speaker and session updates direct to your inbox?</h3>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p class="u-center"><a class="btn btn-newsletter" href="http://eepurl.com/bhSz0b">Sign up now</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <footer class="site__footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
+                <div class="col-sm-6 col-xs-12">
+                    <ul class="list-unstyled list-inline pull-left list-other">
+                        <li><a href="http://angularconnect.com/terms-and-conditions">Terms</a></li>
+                        <li><a href="http://angularconnect.com/code-of-conduct">Code of Conduct</a></li>
+                        <li><a href="http://angularconnect.com/location">Location</a></li>
+                        <li><a href="http://angularconnect.com/blog">Blog</a></li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Vikmans</p>
+                    <ul class="list-unstyled list-inline list-social pull-left">
+    <li>
+        <a href="http://twitter.com/@angularconnect">
+            <i class="f-icon-twitter"></i>
+            <span class="sr-only">Twitter</span>
+        </a>
+    </li>
+    <li>
+        <a href="http://lanyrd.com/2015/angularconnect/">
+            <i class="f-icon-lanyrd"></i>
+            <span class="sr-only">Lanyrd</span>
+        </a>
+    </li>
+    <li>
+        <a href="http://plus.google.com/u/0/112980384361826421395/">
+            <i class="f-icon-googleplus"></i>
+            <span class="sr-only">Google+</span>
+        </a>
+    </li>
+    <li>
+        <a href="http://facebook.com/AngularConnect">
+            <i class="f-icon-facebook"></i>
+            <span class="sr-only">Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a href="mailto:hello@angularconnect.com">
+            <i class="f-icon-mail-alt"></i>
+            <span class="sr-only">email</span>
+        </a>
+    </li>
+</ul>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="site__footer__right">
+                        <a class="woe-logo" href="http://whiteoctoberevents.co.uk/">
+                            <img src="/assets/woe-logo.png" alt="White October Events" width="100" height="70">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    </div>
-    <!-- /.container -->
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/transition.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/collapse.js"></script>
+    <script src="js/affix.js"></script>
+    <script src="js/bind-polyfill.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/script.js"></script>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-</body>
-
-</html>
+</body></html>
